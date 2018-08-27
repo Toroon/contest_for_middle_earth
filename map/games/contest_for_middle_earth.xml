@@ -3,7 +3,13 @@
 <game>
   <info name="Contest for Middle Earth" version="0.1"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
-  <triplea minimumVersion="1.6.1"/>
+  <triplea minimumVersion="1.9.0"/>
+      <!-- Fork of the smaller Middle Earth Map -->
+	      <!-- Mostly a map played by the AI. The human player can influence the history but not dictate it -->
+		  <!-- Mod started 26 Aug 2018 -->
+		  <!-- Tried setting player Saruman to optional true, but this did not give me a choice at the start -->
+		  <!-- Removed the ships from the production for each race, and from the sea placements. This seemed to work -->
+		      <!-- Gondor Lands -->
   <map>
     <!-- Territory Definitions -->
     <!-- Elf Lands -->
@@ -602,8 +608,8 @@
   </resourceList>
   <playerList>
     <!-- Saruman - Freefolk - Mordor - Rohan - Goblins - Elves - Haradrim - Gondor - Rhun - Dale - Khand - Dwarves -->
-    <player name="Saruman" optional="false"/>
-    <player name="Freefolk" optional="false"/>
+    <player name="Saruman" optional="true"/>
+    <player name="Freefolk" optional="true"/>
     <player name="Mordor" optional="false"/>
     <player name="Rohan" optional="false"/>
     <player name="Goblins" optional="false"/>
@@ -1035,9 +1041,6 @@
       <frontierRules name="buyTowerGuard"/>
       <frontierRules name="buyHeavyCavalry"/>
       <frontierRules name="buyTrebuche"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyCaravel"/>
-      <frontierRules name="buyGalleon"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1048,9 +1051,6 @@
       <frontierRules name="buyLightCavalry"/>
       <frontierRules name="buyHeavyCavalry"/>
       <frontierRules name="buyTrebuche"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyCaravel"/>
-      <frontierRules name="buyGalleon"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1061,9 +1061,6 @@
       <frontierRules name="buyArchers"/>
       <frontierRules name="buyLightCavalry"/>
       <frontierRules name="buyCatapult"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyCaravel"/>
-      <frontierRules name="buyGalleon"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1072,11 +1069,6 @@
       <frontierRules name="buyAxeInfantry"/>
       <frontierRules name="buyBerzerkers"/>
       <frontierRules name="buyPhalanx"/>
-      <frontierRules name="buyCannon"/>
-      <frontierRules name="buyMortar"/>
-      <frontierRules name="buyZepplin"/>
-      <frontierRules name="buyLongship"/>
-      <frontierRules name="buyGreatship"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyFortifications"/>
     </productionFrontier>
@@ -1085,9 +1077,6 @@
       <frontierRules name="buyLightCavalry"/>
       <frontierRules name="buyHeavyCavalry"/>
       <frontierRules name="buyTrebuche"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyCaravel"/>
-      <frontierRules name="buyGalleon"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1097,9 +1086,6 @@
       <frontierRules name="buyCorsairs"/>
       <frontierRules name="buyOliphant"/>
       <frontierRules name="buyTrebuche"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyCaravel"/>
-      <frontierRules name="buyGalleon"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1110,9 +1096,6 @@
       <frontierRules name="buyWizard"/>
       <frontierRules name="buyEagles"/>
       <frontierRules name="buyGriffin"/>
-      <frontierRules name="buySwanBoat"/>
-      <frontierRules name="buyCutter"/>
-      <frontierRules name="buyClipper"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1122,9 +1105,6 @@
       <frontierRules name="buyTrolls"/>
       <frontierRules name="buysiegeTower"/>
       <frontierRules name="buyNazgul"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyTrireme"/>
-      <frontierRules name="buyBattleship"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1137,8 +1117,6 @@
       <frontierRules name="buyCatapult"/>
       <frontierRules name="buyBats"/>
       <frontierRules name="buyBalrog"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyBarge"/>
       <frontierRules name="buyCastle"/>
     </productionFrontier>
     <productionFrontier name="sarumanProduction">
@@ -1147,9 +1125,6 @@
       <frontierRules name="buyUrukhai"/>
       <frontierRules name="buyTrolls"/>
       <frontierRules name="buysiegeTower"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyTrireme"/>
-      <frontierRules name="buyBattleship"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1160,9 +1135,6 @@
       <frontierRules name="buyWarWolves"/>
       <frontierRules name="buyRaiderCavalry"/>
       <frontierRules name="buyTrebuche"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyCaravel"/>
-      <frontierRules name="buyGalleon"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -1173,9 +1145,6 @@
       <frontierRules name="buyWarChariot"/>
       <frontierRules name="buyWarWagon"/>
       <frontierRules name="buyTrebuche"/>
-      <frontierRules name="buyRaft"/>
-      <frontierRules name="buyCaravel"/>
-      <frontierRules name="buyGalleon"/>
       <frontierRules name="buyCastle"/>
       <frontierRules name="buyTower"/>
       <frontierRules name="buyFortifications"/>
@@ -2146,11 +2115,6 @@
       <unitPlacement unitType="spearInfantry" territory="Tolfolas" quantity="1" owner="Gondor"/>
       <unitPlacement unitType="undead" territory="Paths of the Dead" quantity="10" owner="Gondor"/>
       <unitPlacement unitType="spearInfantry" territory="Belfalas" quantity="1" owner="Gondor"/>
-      <unitPlacement unitType="galleon" territory="Lefnui" quantity="2" owner="Gondor"/>
-      <unitPlacement unitType="galleon" territory="Morthond" quantity="2" owner="Gondor"/>
-      <unitPlacement unitType="galleon" territory="Gilrain" quantity="2" owner="Gondor"/>
-      <unitPlacement unitType="galleon" territory="S. Gondor Coast" quantity="2" owner="Gondor"/>
-      <unitPlacement unitType="caravel" territory="S. Gondor Coast" quantity="2" owner="Gondor"/>
       <unitPlacement unitType="spearInfantry" territory="S. Gondor" quantity="1" owner="Gondor"/>
       <!-- Rohan Lands-->
       <unitPlacement unitType="castle" territory="Eastfold" quantity="1" owner="Rohan"/>
@@ -2219,9 +2183,6 @@
       <unitPlacement unitType="oliphant" territory="N. Haradwaith" quantity="1" owner="Haradrim"/>
       <unitPlacement unitType="spearInfantry" territory="Harad Road" quantity="4" owner="Haradrim"/>
       <unitPlacement unitType="oliphant" territory="Harad Road" quantity="2" owner="Haradrim"/>
-      <unitPlacement unitType="galleon" territory="Bay of Harad" quantity="4" owner="Haradrim"/>
-      <unitPlacement unitType="galleon" territory="Harnen" quantity="1" owner="Haradrim"/>
-      <unitPlacement unitType="caravel" territory="Umbar Peninsula Coast" quantity="2" owner="Haradrim"/>
       <unitPlacement unitType="raiders" territory="Khand" quantity="4" owner="Khand"/>
       <unitPlacement unitType="raiderCavalry" territory="Khand" quantity="2" owner="Khand"/>
       <unitPlacement unitType="raiders" territory="S. Khand" quantity="3" owner="Khand"/>
@@ -2291,7 +2252,30 @@
       <unitPlacement unitType="spearInfantry" territory="N. Dunland" quantity="1"/>
       <unitPlacement unitType="spearInfantry" territory="Cardolan" quantity="1"/>
       <unitPlacement unitType="spearInfantry" territory="E. Arnor" quantity="1"/>
-      <unitPlacement unitType="spearInfantry" territory="Celduin" quantity="1"/>
+      <unitPlacement unitType="spearInfantry" territory="S. Brown Lands" quantity="1"/>  
+      <unitPlacement unitType="spearInfantry" territory="S. Rhovanion" quantity="1"/>    
+      <unitPlacement unitType="spearInfantry" territory="S. E. Rhovanion" quantity="1"/>    
+      <unitPlacement unitType="spearInfantry" territory="Rhovanion" quantity="1"/>    
+      <unitPlacement unitType="spearInfantry" territory="E. Rhovanion" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Celduin" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Bight" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Debatable Land" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Dead Marshes" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Dagorlad" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Anduin East Bank" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="N. Brown Lands" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Gladden" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Carrock" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Anduin West Bank" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Drimrill Dale" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Celebran" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Wold" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Eregion" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Gladden" quantity="1"/>
+	  <unitPlacement unitType="spearInfantry" territory="Gladden" quantity="1"/>
+	  
+
+	  
     </unitInitialize>
     <resourceInitialize>
       <resourceGiven player="Saruman" resource="PUs" quantity="10"/>
@@ -2393,6 +2377,5 @@
     </property>
     <property name="maxFactoriesPerTerritory" value="1"/>
     <property name="mapName" value="middle_earth" editable="false"/>
-    <property name="notes" value=" &lt;html&gt;&lt;body bgcolor=&quot;BDBDBD&quot; align=&quot;center&quot;&gt;  &lt;div style=&quot;text-align: center;&quot;&gt;  &lt;table border=&quot;1&quot;bgcolor=&quot;9F1E0A&quot;&gt; &lt;tr&gt; &lt;th style=&quot;font-size:140%;000000&quot;&gt;====================&lt;br&gt;Lord of the Rings&lt;br&gt;Middle Earth 12 Army&lt;br&gt;====================&lt;/th&gt; &lt;/tr&gt; &lt;/table&gt; &lt;br&gt; &lt;table border=&quot;1&quot;bgcolor=&quot;757780&quot;&gt; &lt;tr&gt; &lt;th style=&quot;font-size:120%;000000&quot;colspan=&quot;2&quot;&gt;1.6&lt;/th&gt; &lt;/tr&gt; &lt;/table&gt; &lt;br&gt; &lt;br&gt;  &lt;b&gt;Take part and prevail in Tolkien-based epical conflict &lt;/b&gt; &lt;br&gt; &lt;b&gt;In the south evil armies gather in an attempt to destroy the proud nation of Gondor &lt;/b&gt; &lt;br&gt; &lt;b&gt;Elsewhere, Elves along with their allies attempt to stop expansion of Goblins,Rhun and Saruman &lt;/b&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; Map by: flanagany &lt;br&gt; Balance and Game Notes by: Ajmdemen &lt;br&gt; thx to Ernie for allowing to use his gamenotes format and to Blubb and Admetus for helping test balance of the game &lt;br&gt;  &lt;br&gt; &lt;br&gt;  &lt;table border=&quot;1&quot;bgcolor=&quot;757780&quot;&gt; &lt;br&gt; &lt;th style=&quot;font-size:120%;000000&quot;bgcolor=&quot;7B6243&quot;colspan=&quot;2&quot;&gt;Alliances&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;th bgcolor=&quot;757780&quot;&gt;Evil&lt;/th&gt; &lt;th bgcolor=&quot;9F1E0A&quot;&gt;Good&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td bgcolor=&quot;757780&quot;&gt;Saruman&lt;/td&gt; &lt;td bgcolor=&quot;9F1E0A&quot;&gt;Freefolk&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td bgcolor=&quot;757780&quot;&gt;Mordor&lt;/td&gt; &lt;td bgcolor=&quot;9F1E0A&quot;&gt;Rohan&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td bgcolor=&quot;757780&quot;&gt;Goblins&lt;/td&gt; &lt;td bgcolor=&quot;9F1E0A&quot;&gt;Elves&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td bgcolor=&quot;757780&quot;&gt;Haradrim&lt;/td&gt; &lt;td bgcolor=&quot;9F1E0A&quot;&gt;Gondor&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td bgcolor=&quot;757780&quot;&gt;Rhun&lt;/td&gt; &lt;td bgcolor=&quot;9F1E0A&quot;&gt;Dale&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td bgcolor=&quot;757780&quot;&gt;Khand&lt;/td&gt; &lt;td bgcolor=&quot;9F1E0A&quot;&gt;Dwarves&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;  &lt;br&gt;(Nations listed in their &lt;b&gt;Turn Order&lt;/b&gt;.) &lt;br&gt; &lt;br&gt; &lt;br&gt;  &lt;table border=&quot;1&quot;bgcolor=&quot;757780&quot;&gt; &lt;tr&gt;   &lt;th style=&quot;font-size:120%;000000&quot;bgcolor=&quot;7B6243&quot;colspan=&quot;7&quot;&gt;Land Units&lt;/th&gt;  &lt;/tr&gt;   &lt;th bgcolor=&quot;A08058&quot;&gt;Unit name&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;att&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;def&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;move&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;cost&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;size&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;special abilities&lt;/th&gt;  &lt;/tr&gt;   &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;orcs&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;Raiders&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;urukhai&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable, canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;trolls&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;isSupportable, canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;siegeTower&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;wizard&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;8&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;canBlitz,&lt;br&gt; only Elves can buy more&lt;/td&gt;  &lt;/tr&gt;   &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;spearInfantry&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;Hobbits&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;Archers&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;Undead&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;-&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;Ents&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;-&lt;/td&gt;  &lt;td&gt;-&lt;/td&gt;  &lt;td&gt;&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;catapult&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;lightCavalry&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;heavycavalry&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;canBlitz&lt;/td&gt;  &lt;/tr&gt;   &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;trebuche&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;stabbers&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;shooters&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;wargs&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;hunters&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;corsairs&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;oliphant&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;12&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;is 2hit&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;towerGuard&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;chariotArchers&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;givesSupport, canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;warChariot&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;warWagon&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;8&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;xbowInfantry&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;warWolves&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;raiderCavalry&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;canBlitz&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;axeInfantry&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;berzerkers&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;phalanx&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;isSupportable&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;cannon&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;mortar&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;givesSupport&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;fortifications&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;1.5&lt;/td&gt;  &lt;td&gt;-&lt;/td&gt;  &lt;td&gt;immobile, &lt;br&gt;buy 2 units for 3 PUs&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;tower&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;-&lt;/td&gt;  &lt;td&gt;immobile&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;Castle&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;8&lt;/td&gt;  &lt;td&gt;-&lt;/td&gt;  &lt;td&gt;isFactory&lt;/td&gt;  &lt;/tr&gt;    &lt;tr&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;Unit name&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;att&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;def&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;move&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;cost&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;size&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;special abilities&lt;/th&gt;  &lt;/tr&gt; &lt;/table&gt; &lt;br&gt;   &lt;table border=&quot;1&quot;bgcolor=&quot;757780&quot;&gt; &lt;tr&gt;   &lt;th style=&quot;font-size:120%;000000&quot;bgcolor=&quot;7B6243&quot;colspan=&quot;6&quot;&gt;Air Units&lt;/th&gt;  &lt;/tr&gt;   &lt;th bgcolor=&quot;A08058&quot;&gt;Unit name&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;att&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;def&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;move&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;cost&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;special abilities&lt;/th&gt;  &lt;/tr&gt;   &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;nazgul&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;27&lt;/td&gt;  &lt;td&gt;givesSupport, is 2hit&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;bats&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;balrog&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;22&lt;/td&gt;  &lt;td&gt;is 2hit&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;eagles&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;griffin&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;7&lt;/td&gt;  &lt;td&gt;&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;zeppelin&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;8&lt;/td&gt;  &lt;td&gt;&lt;/td&gt;  &lt;/tr&gt;   &lt;tr&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;Unit name&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;att&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;def&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;move&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;cost&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;special abilities&lt;/th&gt;  &lt;/tr&gt; &lt;/table&gt; &lt;br&gt;  &lt;table border=&quot;1&quot;bgcolor=&quot;757780&quot;&gt; &lt;tr&gt;   &lt;th style=&quot;font-size:120%;000000&quot;bgcolor=&quot;7B6243&quot;colspan=&quot;6&quot;&gt;Naval Units&lt;/th&gt;  &lt;/tr&gt;   &lt;th bgcolor=&quot;A08058&quot;&gt;Unit name&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;att&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;def&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;move&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;cost&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;Capacity&lt;/th&gt;  &lt;/tr&gt;   &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;raft&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1land&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;Trireme&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;8&lt;/td&gt;  &lt;td&gt;1land&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;battleship&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;16&lt;/td&gt;  &lt;td&gt;3land&lt;/td&gt;  &lt;/tr&gt;   &lt;td&gt;caravel&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;5&lt;/td&gt;  &lt;td&gt;1land&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;galleon&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;8&lt;/td&gt;  &lt;td&gt;2land&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;barge&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;5land&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;swanBoat&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;1land&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;cutter&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;0&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;clipper&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;3&lt;/td&gt;  &lt;td&gt;4&lt;/td&gt;  &lt;td&gt;14&lt;/td&gt;  &lt;td&gt;3land&lt;/td&gt;  &lt;/tr&gt;    &lt;td&gt;longship&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;1&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;6&lt;/td&gt;  &lt;td&gt;1land&lt;/td&gt;  &lt;/tr&gt;    &lt;tr bgcolor=&quot;A0A0A0&quot;&gt;  &lt;td&gt;greatship&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;2&lt;/td&gt;  &lt;td&gt;12&lt;/td&gt;  &lt;td&gt;2land&lt;/td&gt;  &lt;/tr&gt;   &lt;tr&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;Unit name&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;att&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;def&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;move&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;cost&lt;/th&gt;  &lt;th bgcolor=&quot;A08058&quot;&gt;special abilities&lt;/th&gt;  &lt;/tr&gt; &lt;/table&gt; &lt;br&gt; &lt;br&gt;  &lt;br&gt; &lt;br&gt; &lt;div style=&quot;text-align: center;&quot;&gt; &lt;br&gt;========================================================= &lt;br&gt; &lt;h1 style=&quot;text-align: center;font-size:120%;000000&quot;&gt;Rule Clarifications and Hints&lt;/h1&gt;  &lt;br&gt; &lt;b&gt;Neutral air and normal blitz clarification:&lt;/b&gt; &lt;br&gt; &lt;div style=&quot;text-align: left;&quot;&gt; &lt;br&gt;&lt;b&gt; -&gt;&lt;/b&gt; You &lt;b&gt;can &lt;/b&gt; fly over neutrals with air units. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt;&lt;/b&gt; You &lt;b&gt;can NOT &lt;/b&gt; blitz neutrals with land units. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt;&lt;/b&gt; You &lt;b&gt;can &lt;/b&gt; however blitz through formerly neutral territories on noncombat move phase. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt;&lt;/b&gt; Good understanding of these rules is crucial in the first rounds, especially for Goblin and Elf player. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt;&lt;/b&gt; Low Luck is On by default, you can switch it off in game options.  &lt;br&gt;(Low luck means that all attack or defense powers get added up and divided by 6 to determine the number of hits a side will do. The remainder is then rolled for.  So, for example, 3 trolls have 9 attack total, so they will get 1 hit for sure and roll one dice at 3 to determine if they get a second hit.) &lt;br&gt; &lt;br&gt; &lt;div style=&quot;text-align: center;&quot;&gt; &lt;br&gt;&lt;b&gt;Strategical Hints for Beginners:&lt;/b&gt; &lt;br&gt; &lt;div style=&quot;text-align: left;&quot;&gt; &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Saruman should attack and retreat Fangorn ents rnd1 (by attacking with everything except for 3 uruks he can safely kill 7 of them in 2 combat rounds). &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Goblins can take Lorien rnd 2. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Elves should try avoiding getting their Lorien army trapped. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Buying extra nazguls with Mordor can be effective as it threatens both Gondors land and naval units. Take advantage of 2hit by attacking (and possibly retreating after few combat rounds) small stacks. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Gondor (and others in range of possible nazgul attack) should therefore aim to keep stacks big. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Mordor can also send nazguls north to help against elves, but it can be risky due to increase in Gondor's power. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Due to number of nations in the game there is great potential for conducting attacks on a target with several's nation armies in succession- watch out for that!&lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Another thing to keep in mind is the possibility of removing blockers with allied armies so that you are free to blitz. &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;There are 12 capitols in the game, sometimes they can fall easily, but on the other hand losing 1 capitol doesnt mean game has to be over yet. &lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;div style=&quot;text-align: center;&quot;&gt; &lt;br&gt;&lt;b&gt;Changelist from 1.5 - 1.6:&lt;/b&gt; &lt;br&gt; &lt;div style=&quot;text-align: left;&quot;&gt; &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Changed from Classic to Revised rules. &lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;div style=&quot;text-align: center;&quot;&gt; &lt;br&gt;&lt;b&gt;Changelist from 1.4 - 1.5:&lt;/b&gt; &lt;br&gt; &lt;div style=&quot;text-align: left;&quot;&gt; &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Added 5 extra units to Freefolk &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Increased price of Nazgul from 24 to 27 &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Moved Rohan capitol from Eastfold to Helms Deep and adjusted territory values &lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;div style=&quot;text-align: center;&quot;&gt; &lt;br&gt;&lt;b&gt;Changelist from 1.1 - 1.4:&lt;/b&gt; &lt;br&gt; &lt;div style=&quot;text-align: left;&quot;&gt; &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Air units can no longer land on ships. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Air units are allowed to fly over neutrals now. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Balrog can no longer do Strategic Bombing Raids. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Exchanged 1 orc for 1 siegeTower in Dol Goldur. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Added Castle to Hobbiton. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduced price of Griffin from 8 to 7. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduce attack of Raft from 1 to 0. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduced price of Trolls from 7 to 6, and allowed them to accept support. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduced attack of Nazgul from 4 to 3, and allowed them to give support. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduced price of TowerGuard from 5 to 4. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduced price of Heavy Cavalry from 6 to 5. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduced price of Fortifications from 2 to 1.5 (buy 2 fortifications price of 3). &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Reduced price of Tower from 6 to 5. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Added game options to allow/disallow blitzing and flying over of neutrals, and many other game options too. &lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;div style=&quot;text-align: center;&quot;&gt; &lt;br&gt;&lt;b&gt;Changelist from beta:&lt;/b&gt; &lt;br&gt; &lt;div style=&quot;text-align: left;&quot;&gt; &lt;br&gt; &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Stabber's price increased from 1PU to 2PU. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Hobbit's price reduced from 3PU to 2PU. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Wizard's price reduced from 10PU to 8PU. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;WarChariot's price reduced from 8PU to 6PU. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;WarWagon's price reduced from 10PU to 8PU. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Galleon's price reduced from 9PU to 8PU. &lt;br&gt;&lt;b&gt; -&gt; &lt;/b&gt;Caravel's price reduced from 6PU to 5PU. &lt;br&gt; &lt;br&gt; &lt;/body&gt; &lt;/html&gt; &lt;/body&gt; &lt;/html&gt; "/>
-  </propertyList>
+   </propertyList>
 </game>
